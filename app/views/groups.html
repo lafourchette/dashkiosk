@@ -1,14 +1,14 @@
-<ul data-ui-element="dk-group-list">
-  <li ng-repeat="group in groups track by group.id" class="col-md-6">
-    <dk-group group="group" groups="groups">
-    </dk-group>
-  </li>
-  <li class="col-md-2">
+<div class="col-md-12 m-x">
     <button type="button"
-            class="btn btn-default btn-lg"
+            class="btn btn-default pull-right add-group</a>"
             ng-click="createGroup()">
       <span class="glyphicon glyphicon-plus"></span>
       Add a new group
     </button>
+</div>
+<ul data-ui-element="dk-group-list">
+  <li ng-repeat="group in groups track by group.id" class="col-md-6">
+    <dk-group group="group" groups="groups">
+    </dk-group>
   </li>
 </ul>

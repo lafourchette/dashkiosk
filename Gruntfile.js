@@ -347,7 +347,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'app',
-          dest: 'build',
+          dest: 'dist/public',
           src: [
             'images/{,*/}*.*'
           ]
@@ -466,7 +466,8 @@ module.exports = function(grunt) {
       grunt.util.error('unknown target ' + target + ' for build');
     }
   });
-
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  
   grunt.registerTask('dist', [
     'clean:dist',
     'bower:install',

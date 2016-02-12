@@ -17,21 +17,17 @@
     <dk-alerts></dk-alerts>
 
     <header>
-      <img class="logo" src="images/dashkiosk.svg">Dashkiosk
+      <img class="logo" src="images/fork.png">Forkkiosk
       <img class="branding" src="images/stamp-..BRANDING...svg"                                    >
       <dk-loading-indicator>
         <%= include('spinner') %>
       </dk-loading-indicator>
     </header>
 
-    <div class="container" ng-view>
+    <div class="container-fluid" ng-view>
     </div>
 
     <div class="footer">
-      <a href="http://dashkiosk.readthedocs.org/en/v<%= version %>/usage.html#administration">
-        <span class="glyphicon glyphicon-book"></span>
-        Dashkiosk documentation
-      </a>
     </div>
 
     <!-- build:js scripts/admin-vendor.js -->
