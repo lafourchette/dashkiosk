@@ -6,7 +6,7 @@ module.exports = (function(window) {
 
   require('./polyfills')();
 
-  /* 
+  /*
    Copyright (c) 2012 Cameron Adams. All rights reserved.
    Copyright (c) 2012 Code Aurora Forum. All rights reserved.
    Copyright (C) 2013 Google Inc. All rights reserved.
